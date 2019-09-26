@@ -1,0 +1,7 @@
+sudo docker run --name redis -p 6379:6379  -d redis
+
+java -jar ./im-server/target/im-server-0.0.1-SNAPSHOT.jar --server.port=8084 --im.server.port=8090
+java -jar ./im-server/target/im-server-0.0.1-SNAPSHOT.jar --server.port=8085 --im.server.port=8091
+
+java -jar ./im-client/target/im-client-0.0.1-SNAPSHOT.jar --server.port=8071 --im.user.id=1001 --im.user.userName=Five
+java -jar ./im-client/target/im-client-0.0.1-SNAPSHOT.jar --server.port=8072 --im.user.id=1002 --im.user.userName=Luffy

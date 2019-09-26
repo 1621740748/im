@@ -1,0 +1,13 @@
+ai/yunxi/im/common/pojo/ServerInfo.class
+ai/yunxi/im/common/protocol/MessageProto$MessageProtocolOrBuilder.class
+ai/yunxi/im/common/protocol/MessageProto$MessageProtocol$Builder.class
+ai/yunxi/im/common/protocol/MessageProto$MessageProtocol.class
+ai/yunxi/im/common/constant/BasicConstant.class
+ai/yunxi/im/common/pojo/UserInfo.class
+ai/yunxi/im/common/protocol/MessageProto$MessageProtocol$1.class
+ai/yunxi/im/common/constant/MessageConstant.class
+ai/yunxi/im/common/protocol/MessageProto.class
+ai/yunxi/im/common/utils/StringUtil.class
+ai/yunxi/im/common/enums/StatusEnum.class
+ai/yunxi/im/common/pojo/ChatInfo.class
+ai/yunxi/im/common/protocol/MessageProto$1.class

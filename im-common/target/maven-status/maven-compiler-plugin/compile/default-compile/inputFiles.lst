@@ -1,0 +1,8 @@
+/data/im/im-common/src/main/java/ai/yunxi/im/common/protocol/MessageProto.java
+/data/im/im-common/src/main/java/ai/yunxi/im/common/enums/StatusEnum.java
+/data/im/im-common/src/main/java/ai/yunxi/im/common/constant/BasicConstant.java
+/data/im/im-common/src/main/java/ai/yunxi/im/common/constant/MessageConstant.java
+/data/im/im-common/src/main/java/ai/yunxi/im/common/utils/StringUtil.java
+/data/im/im-common/src/main/java/ai/yunxi/im/common/pojo/UserInfo.java
+/data/im/im-common/src/main/java/ai/yunxi/im/common/pojo/ChatInfo.java
+/data/im/im-common/src/main/java/ai/yunxi/im/common/pojo/ServerInfo.java

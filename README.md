@@ -1,44 +1,44 @@
-# IM聊天室
-一个基于Netty的聊天工具（开发中），使用Zookeeper+Redis实现服务端分布式部署。
+# IM脕脛脤矛脢脪
+脪禄赂枚禄霉脫脷Netty碌脛脕脛脤矛鹿陇戮脽拢篓驴陋路垄脰脨拢漏拢卢脢鹿脫脙Zookeeper+Redis脢碌脧脰路镁脦帽露脣路脰虏录脢陆虏驴脢冒隆拢
 
-## 系统架构
+## 脧碌脥鲁录脺鹿鹿
  ![image](https://github.com/xFive555/im/raw/master/pic/im.png)
--  `客户端`与`服务端`的连接，通过`路由端`选择可用`服务端`节点
--  `服务端`启动后，向`Zookeeper`注册自己
--  `客户端`发送消息通过`路由端`，选择对应的`服务端`进行推送消息
--  `路由端`无状态，集群部署只需要一个`Nginx`代理即可
+-  `驴脥禄搂露脣`脫毛`路镁脦帽露脣`碌脛脕卢陆脫拢卢脥篓鹿媒`脗路脫脡露脣`脩隆脭帽驴脡脫脙`路镁脦帽露脣`陆脷碌茫
+-  `路镁脦帽露脣`脝么露炉潞贸拢卢脧貌`Zookeeper`脳垄虏谩脳脭录潞
+-  `驴脥禄搂露脣`路垄脣脥脧没脧垄脥篓鹿媒`脗路脫脡露脣`拢卢脩隆脭帽露脭脫娄碌脛`路镁脦帽露脣`陆酶脨脨脥脝脣脥脧没脧垄
+-  `脗路脫脡露脣`脦脼脳麓脤卢拢卢录炉脠潞虏驴脢冒脰禄脨猫脪陋脪禄赂枚`Nginx`麓煤脌铆录麓驴脡
  
 ## TODO LIST
-* [x] 客户端服务端连接
-* [x] 客户端处理用户输入消息
-* [x] 消息序列化（Protobuf）
-* [x] 服务端注册
-* [x] 路由端获取可用服务端节点
-* [x] 消息群发功能
-* [x] 客户端下线（强制下线/主动下线）
-* [x] 服务端断线，客户端重连
-* [ ] 心跳
-* [ ] 消息重发
-* [ ] 聊天记录
-* [ ] 离线消息
+* [x] 驴脥禄搂露脣路镁脦帽露脣脕卢陆脫
+* [x] 驴脥禄搂露脣麓娄脌铆脫脙禄搂脢盲脠毛脧没脧垄
+* [x] 脧没脧垄脨貌脕脨禄炉拢篓Protobuf拢漏
+* [x] 路镁脦帽露脣脳垄虏谩
+* [x] 脗路脫脡露脣禄帽脠隆驴脡脫脙路镁脦帽露脣陆脷碌茫
+* [x] 脧没脧垄脠潞路垄鹿娄脛脺
+* [x] 驴脥禄搂露脣脧脗脧脽拢篓脟驴脰脝脧脗脧脽/脰梅露炉脧脗脧脽拢漏
+* [x] 路镁脦帽露脣露脧脧脽拢卢驴脥禄搂露脣脰脴脕卢
+* [ ] 脨脛脤酶
+* [ ] 脧没脧垄脰脴路垄
+* [ ] 脕脛脤矛录脟脗录
+* [ ] 脌毛脧脽脧没脧垄
 
-## 运行
-1.启动redis与Zookeeper，修改redis、Zookeeper配置
+## 脭脣脨脨
+1.脝么露炉redis脫毛Zookeeper拢卢脨脼赂脛redis隆垄Zookeeper脜盲脰脙
 
-2.编译、打包
+2.卤脿脪毛隆垄麓貌掳眉
 ```
 mvn -Dmaven.test.skip=true clean package
 ```
-3.启动路由
+3.脝么露炉脗路脫脡
 ```
 java -jar im-route\target\im-route-0.0.1-SNAPSHOT.jar
 ```	
-4.启动服务端
+4.脝么露炉路镁脦帽露脣
 ```
 java -jar im-server\target\im-server-0.0.1-SNAPSHOT.jar --server.port=8084 --im.server.port=8090
 java -jar im-server\target\im-server-0.0.1-SNAPSHOT.jar --server.port=8085 --im.server.port=8091
 ```	
-5.启动客户端
+5.脝么露炉驴脥禄搂露脣
 ```
 java -jar im-client\target\im-client-0.0.1-SNAPSHOT.jar --server.port=8071 --im.user.id=1001 --im.user.userName=Five
 java -jar im-client\target\im-client-0.0.1-SNAPSHOT.jar --server.port=8072 --im.user.id=1002 --im.user.userName=Luffy

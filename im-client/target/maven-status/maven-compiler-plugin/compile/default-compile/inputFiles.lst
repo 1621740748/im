@@ -1,0 +1,7 @@
+/data/im/im-client/src/main/java/ai/yunxi/im/client/config/BeanConfiguration.java
+/data/im/im-client/src/main/java/ai/yunxi/im/client/handle/IMClientHandle.java
+/data/im/im-client/src/main/java/ai/yunxi/im/client/init/IMClientInit.java
+/data/im/im-client/src/main/java/ai/yunxi/im/client/IMClientApplication.java
+/data/im/im-client/src/main/java/ai/yunxi/im/client/config/InitConfiguration.java
+/data/im/im-client/src/main/java/ai/yunxi/im/client/scanner/Scan.java
+/data/im/im-client/src/main/java/ai/yunxi/im/client/config/SpringBeanFactory.java
